@@ -12,19 +12,19 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
-    path: 'manage customers',
+    path: 'manage-customer',
     component: ManageCustomersComponent
   },
   {
-    path: 'manage items',
+    path: 'manage-item',
     component: ManageItemsComponent
   },
   {
-    path: 'place order',
+    path: 'place-order',
     component: PlaceOrderComponent
   },
   {
-    path: 'search order',
+    path: 'search-order',
     component: SearchOrdersComponent
   },
 ];
