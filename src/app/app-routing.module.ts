@@ -5,6 +5,7 @@ import {ManageCustomersComponent} from "./manage-customers/manage-customers.comp
 import {ManageItemsComponent} from "./manage-items/manage-items.component";
 import {PlaceOrderComponent} from "./place-order/place-order.component";
 import {SearchOrdersComponent} from "./search-orders/search-orders.component";
+import {NotFoundComponent} from "./not-found/not-found.component";
 
 const routes: Routes = [
   {
@@ -27,6 +28,14 @@ const routes: Routes = [
     path: 'search-order',
     component: SearchOrdersComponent
   },
+  {
+    path: '',
+    redirectTo: '/dashboard'
+  },
+  {
+    path: "**",
+    component: NotFoundComponent
+  }
 ];
 
 @NgModule({
